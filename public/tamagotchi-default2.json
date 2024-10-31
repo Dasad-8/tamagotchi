@@ -1,0 +1,8 @@
+{
+    "age": 28,
+    "company": "Bandai",
+    "color": "Red",
+    "energy": 52,
+    "hunger": 5,
+    "isEating": false
+}
