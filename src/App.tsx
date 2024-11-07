@@ -71,6 +71,7 @@ function App() {
   
     function closeSnakeModal() {
       setShowSnakeModal(false);
+      setSnake({...snake, tail: []});
     };
 
     const randomNum = getRandomNumber(1, GAME_WIDTH - 2);
@@ -84,7 +85,7 @@ function App() {
 
     /* let snake:Snake = { fruit: {x:randomNum, y: randomNum2}, player:{x:randomNumSnake, y: randomNum2Snake}} /* {x: 1, y: 1} */
 
-    let [snake, setSnake] = useState <Snake> ({ fruit: {x:randomNum, y: randomNum2}, player:{x:randomNumSnake, y: randomNum2Snake}, direction:{x: 1, y: 0}}); //!!!!
+    let [snake, setSnake] = useState <Snake> ({ fruit: {x:randomNum, y: randomNum2}, player:{x:randomNumSnake, y: randomNum2Snake}, direction:{x: 1, y: 0}, tail: []}); //!!!!
 
     let [points, setPoints] = useState <number> (0);
 
